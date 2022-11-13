@@ -7,7 +7,7 @@ node {
         bat "dir"
     }
     stage("run python"){
-        bat "python ${env.PythonScript}
+        bat "python ${env.PythonScript}"
         }
     
 }
