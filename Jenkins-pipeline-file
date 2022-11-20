@@ -1,7 +1,13 @@
 properties([pipelineTriggers([pollSCM('* * * * *')])])
-node {
+def myBanner(){
+    return '''***
+start
+***
+'''
+node any {
     stage("clone"){
         git branch: 'main', url: 'https://github.com/TzufBarOr/my-0507-project.git'
+            acho  myBanner()
     }
     stage("show files"){
         bat "dir"
