@@ -1,8 +1,8 @@
 properties([pipelineTriggers([pollSCM('* * * * *')])])
 def myBanner(){
-    return '''***
+    return '''*****
 start
-***
+*****
 '''
 }
 node {
