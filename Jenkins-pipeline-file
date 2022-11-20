@@ -4,10 +4,12 @@ node {
         git branch: 'main', url: 'https://github.com/TzufBarOr/my-0507-project.git'
     }
     def myBanner(){
-        return "***start***"
+        return '''***
+        start
+        ***"
 }    
         stage("Banner"){
-        bat myBanner()
+            echo myBanner()
     }
     stage("show files"){
         bat "dir"
