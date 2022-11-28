@@ -1,4 +1,4 @@
-properties([pipelineTriggers([pollSCM('* * * * *')])])
+properties([parameters([string('PythonScript')]), pipelineTriggers([githubPush(), pollSCM('* * * * *')])])
 def myBanner(){
     return '''*****
 start
