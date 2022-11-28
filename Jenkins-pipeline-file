@@ -19,5 +19,3 @@ node {
     stage("run python"){
         bat "python ${env.PythonScript}"
         }
-    
-}
