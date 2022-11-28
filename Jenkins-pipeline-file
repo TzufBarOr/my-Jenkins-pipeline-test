@@ -7,7 +7,7 @@ start
 }
 node {
     stage("clone"){
-        git branch: 'main', url: 'https://github.com/TzufBarOr/my-0507-project.git'
+        git branch: 'main', url: 'https://github.com/TzufBarOr/my-Jenkins-pipeline-test.git'
             echo myBanner()
     }
     stage("show files"){
