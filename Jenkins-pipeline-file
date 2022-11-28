@@ -6,6 +6,9 @@ node {
     stage("show files"){
         bat "dir"
     }
+    stage("show my IP")
+        bat "python showing host name and IP.py"
+    }
     stage("run python"){
         bat "python ${env.PythonScript}"
         }
